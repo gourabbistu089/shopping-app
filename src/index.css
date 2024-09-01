@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@keyframes slide {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@layer utilities {
+  .animate-slide {
+    animation: slide 0.5s ease-out forwards;
+  }
+}
+
+a.active hr {
+  display: block;
+}
